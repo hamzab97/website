@@ -1,0 +1,72 @@
+div.name{
+    vertical-align: middle;
+}
+
+.page-header h1{
+    font-size: 500%;
+    font-style: normal;
+    font-family: Garamond;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-header p{
+    font-size: 200%;
+    font-style: normal;
+    font-family: Garamond;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.story {
+    margin: 10px 0px;
+}
+.story-creator {
+    font-size: 20px;
+    font-weight: 600;
+}
+.story-content {
+    font-size: 40px;
+}
+.story-comments {
+
+}
+.comment-creator {
+    font-weight: 600;
+}
+
+.feed-container {
+    padding: 1rem 0;
+}
+
+@media(max-width: 500px){
+    .page-header h1{
+        font-size: 500%;
+        font-style: normal;
+        font-family: Garamond;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width: 300px){
+    .page-header h1{
+        font-size: 500%;
+        font-style: normal;
+        font-family: Garamond;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
