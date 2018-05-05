@@ -1,49 +1,53 @@
-const http = require('http'); //import the package http and when you want to use it, type http.[methodname]
-const express = require('express'); //import express
-const fs = require('fs');
-const db = require('../database/db.js');
-const bodyParser = require('body-parser');
-
-const router = express.Router();
-
-//Bring in models
-let Post = require('../models/blogPost.js');
-
-router.get('/whoami', function(req, res){           //for authentication of a user object
-    res.send({
-        name: "anon",
-        post: "hoi",
-        date: "may 5"
-    });
-});
-
-router.get('/user', function(req, res){
-    res.send({
-        name: "anon",
-        post: "hoi",
-        date: "may 5"
-    });
-});
-
-//get request
-router.get('/posts', function(req, res){ //return all the posts in the database
-    Post.find({}, function(err, posts){ //posts is an array of Post in the database
-        res.send(posts); //call back function, send posts
-    });
-});
-
-//post request - query to the db
-router.post('/post', function(req, res){
-    let newPost = new Post({
-        "name": req.body.name,
-        "post": req.body.post,
-        "date": req.body.date
-    });//story created
-    //now save the story to db
-    newPost.save(function(err, post){
-        if (err) console.log(err);
-    });
-    res.send({});
-});
-
-module.exports = router;
+// //contain routes for blog posts
+// const express = require('express');
+// const bodyParser = require('body-parser');
+// const mysql = require('mysql');
+// const fs = require('fs');
+// const http = require('http'); //import the package http and when you want to use it, type http.[methodname]
+//
+//
+// const router = express.Router();
+//
+// function getConnection(){
+//     return mysql.createConnection({
+//         host: 'localhost',
+//         user: 'hamza',
+//         password: '0000',
+//         database: 'blogPostsWebsite'
+//     });
+// }
+//
+// router.get('/post', function(req, res){
+//     console.log("fetching users");
+//
+//     const connection = getConnection();
+//
+//     const query = "SELECT * FROM blogPosts"; //select * from tableName;
+//     connection.query(query, function(err, rows, fields){
+//         if (err){
+//             console.log("Failed to query. Error " + err);
+//             res.sendStatus(500); //error 500 is server  error
+//         }
+//         console.log("I think we fetched users successfully");
+//         res.json(rows);
+//     });
+// });
+//
+// router.post('/post', function(req, res){
+//     console.log("story: " + req.body.story);
+//     let story = req.body.story;
+//     var d = new Date();
+//     let time =  d.toDateString() + " " + d.toLocaleTimeString();
+//     console.log("time: " + time);
+//     let queryString = "INSERT INTO blogPosts (user_name, story, time) VALUES ('hamza', ?, ?)";
+//     getConnection().query(queryString, [story, time], function(err, results, fields){
+//         if (err){
+//             console.log("Query failed to insert new user " + err);
+//             res.sendStatus(500);
+//             return;
+//         }
+//         console.log("Insert successfully, story: " + results);
+//     });
+// });
+//
+// module.exports = router;

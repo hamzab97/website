@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    renderPostButton("button");
-    renderPosts();
+    // renderPostButton("submitButton");
+    console.log("page loaded");
 });
 
 function renderPostButton(id){
     var btn = document.getElementById(id);
-    btn.className = "btn btn-outline-success my-2 my-sm-0";
-    btn.innerHTML = "Submit";
+    btn.type = "submit";
     btn.addEventListener("click", function () {
         postText();
-        postBlogPost();
     });
 }
 
@@ -52,6 +50,10 @@ function renderpostText(blogJSON){
 function postText() {
     const text = document.getElementById("new-status-text").value;
 
+    if (text == null || text == ""){
+        return;
+    }
+
     const card = document.createElement("div");
     card.className = 'story card';
 
@@ -59,7 +61,7 @@ function postText() {
     cardBody.className = 'card-body';
     card.appendChild(cardBody);
 
-    const creatorSpan = document.createElement('a');
+    const creatorSpan = document.createElement('p');
     //'a' tag allows you to make links
     creatorSpan.className = 'story-creator card-title';
     creatorSpan.innerHTML = "Hamza";
@@ -83,31 +85,9 @@ function postText() {
     dateandTime.innerHTML = d.toDateString() + " " + d.toLocaleTimeString();
     cardFooter.appendChild(dateandTime);
 
-    //post to db
-    postBlogPost(text, dateandTime.innerHTML);
-
     document.getElementById("new-status-text").value = null;
 
     const storiesDiv = document.getElementById('stories');
     storiesDiv.prepend(card);
     return storiesDiv;
-}
-
-function postBlogPost(newpost, postdate){
-    let data = {
-        name: "Hamza",
-        post: newpost,  //content to be sent to the server
-        date: postdate
-    };
-    //call endpoint
-    post('/api/post', data); //posted to the database
-}
-
-function renderPosts(){
-    get('/api/posts', function (postsArray) {
-        for (let i = 0; i < postsArray.length; i++){
-            let currentpost = postsArray[i];
-            renderpostText(currentpost);
-        }
-    });
 }
