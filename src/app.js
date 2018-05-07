@@ -24,12 +24,24 @@ app.get('/', function (req, res) {
 });
 
 app.get('/blog', function(req, res){
-    res.sendFile('blog.html', {root:'src/views'}); //sending to the server
+    // res.sendFile('blog.html', {root:'src/views'}); //sending to the server
     //app.get is a method of express
+    res.sendfile('pageUnderConstruction', {root:'src/views'});
 });
 
 app.get('/shopifyChallenge', function(req, res){
-    res.send("Page under construction");
+    res.sendfile('pageUnderConstruction', {root:'src/views'});
+    // res.sendFile('shopifyChallenge.html', {root:'src/views'});
+});
+
+app.get('/blog.html', function(req, res){
+    // res.sendFile('blog.html', {root:'src/views'}); //sending to the server
+    //app.get is a method of express
+    res.sendfile('pageUnderConstruction', {root:'src/views'});
+});
+
+app.get('/shopifyChallenge.html', function(req, res){
+    res.sendfile('pageUnderConstruction', {root:'src/views'});
     // res.sendFile('shopifyChallenge.html', {root:'src/views'});
 });
 

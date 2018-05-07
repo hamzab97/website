@@ -24,6 +24,17 @@ div.name{
     transform: translate(-50%, -50%);
 }
 
+.page-header ul{
+    font-size: 200%;
+    font-style: normal;
+    font-family: Garamond;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
 .story {
     margin: 10px 0px;
 }
