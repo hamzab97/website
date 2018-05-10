@@ -49,7 +49,7 @@ app.get('/shopifyChallenge.html', function(req, res){
 
 const server = http.Server(app); //create instance of http server using express instance
 
-const port = 3000//process.env.port; //listen on port 3000
+const port = process.env.PORT||3000//process.env.port; //listen on port 3000
 server.listen(port, function(){ //opening up http requests on your machine
     console.log('Server running on port: ' + port);
 });
