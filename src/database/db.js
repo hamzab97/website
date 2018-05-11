@@ -12,7 +12,7 @@ var router = express.Router();
 
 router.get('/post', function(req, res){
     console.log("fetching blog posts");
-    mongoClient.connect("mongodb://localhost:27017/blogPosts", function(err, db){
+    mongoClient.connect("mongodb+srv://hamza:0000@blogstories-nqdqa.mongodb.net/test?retryWrites=true", function(err, db){
         if (err) throw err;
         let dbName = db.db('blogPosts');
         dbName.collection('stories').find({}).toArray(function(err, result){
@@ -29,7 +29,7 @@ router.post('/post', function(req, res){
     var d = new Date();
     let time =  d.toDateString() + " " + d.toLocaleTimeString();
     let object = {name:"hamza", story:story, date:time};
-    mongoClient.connect("mongodb://localhost:27017/blogPosts", function(err, db){
+    mongoClient.connect("mongodb+srv://hamza:0000@blogstories-nqdqa.mongodb.net/test?retryWrites=true", function(err, db){
         if (err) throw err;
         let dbName = db.db('blogPosts');
         dbName.collection('stories').insertOne(object, function(err, res){
