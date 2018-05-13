@@ -35,7 +35,7 @@ html{
 #typed-strings{
     font-style: normal;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -43,6 +43,7 @@ html{
 
 #typed-strings h1{
     font-size: 3rem;
+    transform: translate(3%, -10%);
 }
 
 #typed-strings p{
