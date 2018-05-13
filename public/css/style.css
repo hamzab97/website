@@ -32,6 +32,23 @@ html{
     transform: translate(-50%, -50%);
 }
 
+#typed-strings{
+    font-style: normal;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#typed-strings h1{
+    font-size: 3rem;
+}
+
+#typed-strings p{
+    font-size: 1.5rem;
+}
+
 .story {
     margin: 10px 0px;
 }
