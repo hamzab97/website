@@ -41,14 +41,14 @@ html{
     transform: translate(-50%, -50%);
 }
 
-#typed-strings h1{
-    font-size: 3rem;
-    transform: translate(3%, -10%);
-}
+/*#typed-strings h1{*/
+    /*font-size: 3rem;*/
+    /*transform: translate(3%, -10%);*/
+/*}*/
 
-#typed-strings p{
-    font-size: 1.5rem;
-}
+/*#typed-strings p{*/
+    /*font-size: 1.5rem;*/
+/*}*/
 
 .story {
     margin: 10px 0px;

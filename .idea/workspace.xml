@@ -49,8 +49,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="122">
+              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -374,7 +374,7 @@
       <workItem from="1525806679758" duration="9120000" />
       <workItem from="1525891564358" duration="599000" />
       <workItem from="1525893325501" duration="1721000" />
-      <workItem from="1525895063576" duration="32185000" />
+      <workItem from="1525895063576" duration="32371000" />
     </task>
     <task id="LOCAL-00001" summary="mysql backend connected">
       <created>1525534656717</created>
@@ -478,7 +478,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237267000" />
+    <option name="totallyTimeSpent" value="237453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="389" y="30" width="1531" height="1050" extended-state="0" />
@@ -739,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        <state relative-caret-position="122">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="41" selection-end-column="1" />
         </state>
       </provider>
     </entry>
