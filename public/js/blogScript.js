@@ -112,7 +112,7 @@ function renderNavBar(aUser){
 }
 
 function renderStories(){
-    const url = 'http://localhost:3000/db/post';
+    const url = '/db/post';
     fetch(url)
         .then(function(response){
             return response.json();
