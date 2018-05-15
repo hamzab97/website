@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58e87451-f332-4f45-96cf-1228cc76076e" name="Default" comment="mysql backend connected">
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="58e87451-f332-4f45-96cf-1228cc76076e" name="Default" comment="mysql backend connected" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -49,8 +47,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="41" selection-end-column="1" />
+            <state relative-caret-position="767">
+              <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -374,7 +372,7 @@
       <workItem from="1525806679758" duration="9120000" />
       <workItem from="1525891564358" duration="599000" />
       <workItem from="1525893325501" duration="1721000" />
-      <workItem from="1525895063576" duration="32371000" />
+      <workItem from="1525895063576" duration="32951000" />
     </task>
     <task id="LOCAL-00001" summary="mysql backend connected">
       <created>1525534656717</created>
@@ -478,11 +476,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237453000" />
+    <option name="totallyTimeSpent" value="238033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="389" y="30" width="1531" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17766166" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -739,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="767">
+          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
         </state>
       </provider>
     </entry>
