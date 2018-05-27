@@ -79,6 +79,19 @@ html{
     font-size: 1rem;
 }
 
+
+#pic1{
+    transform: translate(95%,10%);
+}
+
+#pic2{
+    transform: translate(200%,-35%);
+}
+
+#pic3{
+    transform: translate(95%,-75%);
+}
+
 #page{
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 0.5s; /* Firefox < 16 */
