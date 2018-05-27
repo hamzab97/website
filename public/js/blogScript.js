@@ -109,7 +109,7 @@ function newNavBarItem (text, url){
 function renderNavBar(aUser){
     var navUL = document.getElementById("navbarSupportedContent");
     navUL.appendChild(newNavBarItem(aUser.name, "index.html"));
-    navUL.appendChild(newNavBarItem("Login", "login.html"));
+    // navUL.appendChild(newNavBarItem("Login", "login.html"));
 }
 
 function renderStories(){
