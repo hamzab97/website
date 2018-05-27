@@ -47,6 +47,10 @@ app.get('/shopifyChallenge.html', function(req, res){
     // res.sendFile('shopifyChallenge.html', {root:'src/views'});
 });
 
+app.get('/portfolio', function(req, res){
+    res.sendfile('portfolio.html', {root: 'src/views'});
+});
+
 const server = http.Server(app); //create instance of http server using express instance
 
 const port = process.env.PORT||3000//process.env.port; //listen on port 3000

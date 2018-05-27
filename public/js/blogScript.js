@@ -2,19 +2,20 @@ const user = {
     name: "Hamza Bana"
 };
 document.addEventListener("DOMContentLoaded", function () {
-    // renderPostButton("submitButton");
+    renderPostButton("submitButton");
     console.log("page loaded");
     renderNavBar(user);
     renderStories();
 });
 
-// function renderPostButton(id){
-//     var btn = document.getElementById(id);
-//     btn.type = "submit";
-//     btn.addEventListener("click", function () {
-//         postText();
-//     });
-// }
+function renderPostButton(id){
+    var btn = document.getElementById(id);
+    btn.type = "submit";
+    btn.addEventListener("click", function () {
+        alert("Only registered users can write blog posts");
+        document.getElementById("new-status-text").value = null;
+    });
+}
 
 function renderpostText(blogJSON){
     const card = document.createElement("div");
