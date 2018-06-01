@@ -22,6 +22,6 @@ function renderNavBar(aUser){
     var navUL = document.getElementById("navbarSupportedContent");
     navUL.appendChild(newNavBarItem(aUser.name, "index.html"));
     navUL.appendChild(newNavBarItem("Skills", "skills.html"));
-    navUL.appendChild(newNavBarItem("Portfolio", "pageUnderConstruction.html"));
+    navUL.appendChild(newNavBarItem("Portfolio", "portfolio.html"));
     // navUL.appendChild(newNavBarItem("Shopify Challenge", "shopifyChallenge.html"));
 }

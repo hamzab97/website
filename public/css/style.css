@@ -81,7 +81,9 @@ html{
 
 
 #pic1{
-    transform: translate(95%,10%);
+    /*transform: translate(95%,10%);*/
+    width: 40rem;
+    height:auto;
 }
 
 #pic2{
