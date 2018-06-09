@@ -4,7 +4,7 @@
   "description": "",
   "main": "blogScript.js",
   "scripts": {
-    "start":"node src/app.js"
+    "start": "node src/app.js"
   },
   "author": "hamza",
   "license": "ISC",
@@ -13,10 +13,12 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "http": "0.0.0",
+    "live-server": "^1.2.0",
     "mongodb": "^2.2.35",
     "mongoose": "^5.0.14",
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
+    "particles.js": "^2.0.0",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
     "passport-local": "^1.0.0",

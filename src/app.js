@@ -4,7 +4,6 @@ const express = require('express'); //import express
 const fs = require('fs');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
-
 //local dependencies
 var db = require('./database/db.js');
 // const api = require('./routes/api.js');
@@ -53,7 +52,7 @@ app.get('/portfolio', function(req, res){
 
 const server = http.Server(app); //create instance of http server using express instance
 
-const port = process.env.PORT||3000//process.env.port; //listen on port 3000
+const port = process.env.PORT||3000;//process.env.port; //listen on port 3000
 server.listen(port, function(){ //opening up http requests on your machine
     console.log('Server running on port: ' + port);
 });
