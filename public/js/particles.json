@@ -1,13 +1,18 @@
 {
   "particles":{
     "number":{
-      "value":100
+      "value":50
     },
     "color":{
-      "value":"#e6e5e5"
+      "value":"#999999"
     },
     "size":{
       "value":10
+    },
+    "events":{
+      "onhover":{
+        "mode":"repulse"
+      }
     }
   }
 }
